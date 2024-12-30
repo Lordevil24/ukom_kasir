@@ -1,0 +1,49 @@
+body {
+  background-color: #ffffff;
+  font-family: 'Arial', sans-serif;
+}
+.navbar {
+  background-color: #4caf50; 
+}
+.navbar-brand {
+  color: #fff;
+  font-weight: bold;
+}
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+.card-header {
+  background-color: #ff9800;
+  color: #fff;
+  font-weight: bold;
+}
+.btn-custom {
+  background-color: #ffc107;
+  color: #fff;
+}
+.btn-custom:hover {
+  background-color: #ffca28;
+}
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+.menu-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.menu-item {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.menu-item h5 {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+.menu-item p {
+  color: #555;
+}

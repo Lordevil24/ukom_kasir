@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplikasi Kasir Bakso</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container justify-content-center">
+          <h1 class="navbar-brand">Bakso Maryam</h1>
+        </div>
+      </nav>
+      
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header text-center">Menu Bakso</div>
+              <div class="card-body">
+                <div class="row row-cols-1 row-cols-md-2 g-3">
+                  <div class="col menu-item">
+                    <img src="img/bk.jpg" alt="Bakso Biasa">
+                    <h5>Bakso Biasa</h5>
+                    <p>Rp 10.000</p>
+                    <button class="btn btn-custom w-100" id="btn-Bakso Biasa" onclick="selectMenu('Bakso Biasa')">Pilih</button>
+                  </div>
+                  <div class="col menu-item">
+                    <img src="img/bj.jpg" alt="Bakso Jumbo">
+                    <h5>Bakso Jumbo</h5>
+                    <p>Rp 15.000</p>
+                    <button class="btn btn-custom w-100" id="btn-Bakso Jumbo" onclick="selectMenu('Bakso Jumbo')">Pilih</button>
+                  </div>
+                  <div class="col menu-item">
+                    <img src="img/bs.jpg" alt="Bakso Spesial">
+                    <h5>Bakso Spesial</h5>
+                    <p>Rp 20.000</p>
+                    <button class="btn btn-custom w-100" id="btn-Bakso Spesial" onclick="selectMenu('Bakso Spesial')">Pilih</button>
+                  </div>
+                  <div class="col menu-item">
+                    <img src="img/bb.jpg" alt="Bakso Beranak">
+                    <h5>Bakso Beranak</h5>
+                    <p>Rp 25.000</p>
+                    <button class="btn btn-custom w-100" id="btn-Bakso Beranak" onclick="selectMenu('Bakso Beranak')">Pilih</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header text-center">Keranjang</div>
+              <div class="card-body">
+                <ul class="list-group" id="cart-list">
+                  <li class="list-group-item text-center">Keranjang Kosong</li>
+                </ul>
+                <div class="mt-3 text-end">
+                  <h5>Total: Rp <span id="total-price">0</span></h5>
+                  <button class="btn btn-custom w-100 mt-2" onclick="checkout()">Checkout</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <hr>
+        <p>&copy; 2024 Bakso Maryam. All rights reserved. </p>
+      </footer>
+      
+      
+<script src="js/script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
